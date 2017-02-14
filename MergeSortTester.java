@@ -2,10 +2,10 @@
   class MergeSortTester
 
   ALGORITHM:
-  <INSERT YOUR DISTILLATION OF ALGO HERE>
+  If the array has length 1, return the array. If not, split it in half, sort the two halves, and then merge them, and return that array.
 
   BIG-OH CLASSIFICATION OF ALGORITHM:
-  <INSERT YOUR EXECUTION TIME CATEGORIZATION OF MERGESORT HERE>
+  O( nlogn )
 
   Mean execution times for dataset of size n:
   Batch size: <# of times each dataset size was run>
