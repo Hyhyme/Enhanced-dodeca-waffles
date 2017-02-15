@@ -2,13 +2,13 @@
 
 APSC2 by Ishtiaque Mahdi, Edward Luo, Thomas Lin
 
-#Description
+#Description:
 
-	We are testing the runtime of MergeSort. MergeSort follows the following: If the array has length 1, return the array. If not, split it in half, sort the two halves, and then merge them, and return that array.
+We are testing the runtime of MergeSort. MergeSort follows the following: If the array has length 1, return the array. If not, split it in half, sort the two halves, and then merge them, and return that array.
 
-#Methodology
+#Methodology:
 
-	We are testing the runtime by using a timer to measure how long it takes MergeSort to sort arrays of different lengths. By comparing the rate of change, we can determine the runtime of MergeSort.
+We are testing the runtime by using a timer to measure how long it takes MergeSort to sort arrays of different lengths. By comparing the rate of change, we can determine the runtime of MergeSort.
 
 #Findings/Analysis
 
