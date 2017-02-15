@@ -34,9 +34,8 @@ public class MergeSortTester
 
     /******************************
      * execution time analysis 
-     * <INSERT YOUR DESCRIPTION HERE OF 
-     *  YOUR APPARATUS FOR GENERATING EXECUTION 
-     *  TIME DATA...> 
+   We used System.nanoTime() to measure our execution time in nanoseconds. We initially wanted to use System.currentTimeMillis(), but the values of smaller sized arrays were so miniscule when we subtracted the initial time from EPOCH, it would result in zero. 
+Since we are just testing the run time of the MergeSort alogrithm, we need an initial measure of time after running the populate methods and instantiating what we need. Then we run the MergeSort algorithm on an instantiated array, followed by printing out the current time minus the initial time, in order to find the time spent between the start of the MergeSort algorithm and the end. With this we can gather data and analyze how time increases in relation to array size.
      ******************************/
     public static void main( String[] args ) 
     {
