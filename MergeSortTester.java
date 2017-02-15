@@ -13,12 +13,12 @@
   O( nlogn )
   Mean execution times for dataset of size n:
   Batch size: 10
-  n=1       time: ~6700
-  n=10      time: ~17000
-  n=100     time: ~98000
-  n=1000    time: ~750000
-  n=1000000   time: ~260000000
-  n=<1000000000>  time: ~2100000000
+  n=1       time: 6743
+  n=10      time: 17107
+  n=100     time: 98643
+  n=1000    time: 754284
+  n=1000000   time: 263504136
+  n=<1000000000>  time: 2135844987
   ANALYSIS:
   <INSERT YOUR RESULTS ANALYSIS HERE>
   ======================================*/
