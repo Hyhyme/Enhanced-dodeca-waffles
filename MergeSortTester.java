@@ -1,3 +1,10 @@
+/*Enhanced-dodeca-waffles (Ishtiaque Mahdi, Edward Luo, Thomas Lin)
+  APCS2 Pd 4
+  HW #7 - What Does the Data Say? / Runtime Of MergeSort / Proving that MergeSort has a runtime of O(nlogn)
+  2017 - 02 - 14
+*/
+
+
 /*======================================
   class MergeSortTester
   ALGORITHM:
@@ -5,13 +12,13 @@
   BIG-OH CLASSIFICATION OF ALGORITHM:
   O( nlogn )
   Mean execution times for dataset of size n:
-  Batch size: <# of times each dataset size was run>
-  n=1       time: ~4900
-  n=10      time: ~16000
-  n=100     time: ~93000
-  n=1000    time: ~635000
-  ...
-  n=<huge>  time: 
+  Batch size: 10
+  n=1       time: ~6700
+  n=10      time: ~17000
+  n=100     time: ~98000
+  n=1000    time: ~750000
+  n=1000000   time: ~260000000
+  n=<1000000000>  time: ~2100000000
   ANALYSIS:
   <INSERT YOUR RESULTS ANALYSIS HERE>
   ======================================*/
@@ -37,17 +44,23 @@ public class MergeSortTester
 	//int[] arr1 = new int[1];
       	//int[] arr2 = new int[10];
 	//int[] arr3 = new int[100];
-	int[] arr4 = new int[1000];
+	//int[] arr4 = new int[1000];
+	//int[] arr5 = new int[1000000];
+	int[] arr6 = new int[10000000];
 	//populate(arr1);
 	//populate(arr2);
 	//populate(arr3);
-	populate(arr4);
+	//populate(arr4);
+	//populate(arr5);
+	populate(arr6);
 	MergeSort test = new MergeSort();
 	initial = System.nanoTime();
 	//test.sort(arr1);
 	//test.sort(arr2);
 	//test.sort(arr3);
-	test.sort(arr4);
+	//test.sort(arr4);
+	//test.sort(arr5);
+	test.sort(arr6);
 	System.out.println(System.nanoTime()-initial);
 	
     }//end main
