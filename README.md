@@ -12,15 +12,6 @@ We are testing the runtime by using a timer to measure how long it takes MergeSo
 
 #Findings/Analysis
 
- Batch size: 10
-  n=1       time: 6743
-  n=10      time: 17107
-  n=100     time: 98643
-  n=1000    time: 754284
-  n=1000000   time: 263504136
-  n=1000000000  time: 2135844987
-
-
  Run time is nlogn. In sort, it basically splits the array in half everytime until the array has length of 1. When we learned binary search, we discovered that it had a run time of logn. This is similar in that it splits the job in half repeatedly, as opposed to making two arrays, one with the first element and the second with the rest and splitting the array that way. But, merge has a runtime of n, because of the for loop that is based on the length of the arrays. So, the final runtime is nlogn. Our data supports our statement becuase as n increases, it follows the curve of the function y = nlogn.
 
 Graphs on Google Doc: https://docs.google.com/document/d/1KbroAXramUEWdVxN3pHEr-zFpgQ4KLhmFHsYcQceTtY/pub
