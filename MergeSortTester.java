@@ -40,26 +40,26 @@ Since we are just testing the run time of the MergeSort alogrithm, we need an in
     public static void main( String[] args ) 
     {
 	long initial = 0;
-	//int[] arr1 = new int[1];
-      	//int[] arr2 = new int[10];
-	//int[] arr3 = new int[100];
-	//int[] arr4 = new int[1000];
-	//int[] arr5 = new int[1000000];
-	int[] arr6 = new int[10000000];
-	//populate(arr1);
+	int[] arr1 = new int[1000];
+      	//int[] arr2 = new int[10000];
+	//int[] arr3 = new int[100000];
+	//int[] arr4 = new int[1000000];
+	//int[] arr5 = new int[5000000];
+	//int[] arr6 = new int[10000000];
+	populate(arr1);
 	//populate(arr2);
 	//populate(arr3);
 	//populate(arr4);
 	//populate(arr5);
-	populate(arr6);
+	//populate(arr6);
 	MergeSort test = new MergeSort();
 	initial = System.nanoTime();
-	//test.sort(arr1);
+	test.sort(arr1);
 	//test.sort(arr2);
 	//test.sort(arr3);
 	//test.sort(arr4);
 	//test.sort(arr5);
-	test.sort(arr6);
+	//test.sort(arr6);
 	System.out.println(System.nanoTime()-initial);
 	
     }//end main
